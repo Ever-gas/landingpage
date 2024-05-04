@@ -4,6 +4,7 @@
 	import Card from '$lib/components/Card.svelte';
 	import Step from '$lib/components/Steps.svelte';
 	import Carousel from '$lib/components/Carousel.svelte';
+	import FaqItem from '$lib/components/FaqItem.svelte';
 </script>
 
 <main>
@@ -173,7 +174,7 @@
 		</div>
 	</section>
 
-	<section class="pt-[141px]">
+	<section class="pt-[141px] mb-[75px]">
 		<p class="font-satoshi text-hint text-center font-medium lg-[6px] lg:mb-[10px] uppercase">
 			The gas universe
 		</p>
@@ -185,8 +186,72 @@
 		<Carousel />
 	</section>
 
-	<section class="px-5 md:px-16 pt-[141px]">
-		
-	</section>
+	<section class="px-5 md:px-16">
+		<div class="py-[64px] px-[30px] md:px-[60px] bg-evergrey rounded-3xl">
+			<div class="flex items-center gap-x-[10px] mb-[56px] pb-5 border-b border-evergreen-soft justify-center md:justify-start">
+				<img src="/images/dot.svg" alt="" role="presentation" />
+				<p class="font-satoshi font-medium text-title -tracking-[0.056px] text-sm uppercase">faq</p>
+			</div>
 
+			<div
+				class="flex justify-between items-stretch gap-x-[96px] gap-y-14 lg:gap-y-0 flex-col lg:flex-row"
+			>
+				<div class="flex flex-col justify-between gap-y-10 lg:gap-0">
+					<h3
+						class="font-satoshi font-bold text-[31px] md:text-[62px] leading-[34px] md:leading-[68px] -tracking-[1.86px] text-title text-center md:text-start"
+					>
+						Answers to the frequently asked questions.
+					</h3>
+					<div class="text-center md:text-start">
+						<div class="flex justify-center md:justify-start mb-8">
+							<img src="/images/quote.svg" alt="" role="presentation" />
+						</div>
+						<h4 class="font-satoshi text-[20px] text-title font-bold -tracking-[0.2px] mb-4">
+							Still have questions?
+						</h4>
+						<p
+							class="font-satoshi font-normal text-paragraph -tracking-[0.18px] text-base md:text-lg leading-6 mb-[50px] md:w-[38ch]"
+						>
+							For assistance, please send a mail visit our <span class="text-title">Contact Us</span
+							>
+							page or call our customer support hotline at
+							<span class="text-title">(671) 555-0110</span>. Our dedicated team is ready to help
+							you on any matter.
+						</p>
+						<a
+							href="https://wa.me/+2348102828226"
+							class="inline-flex gap-x-2 justify-between items-center font-medium text-lg text-title font-satoshi leading-6 -tracking-[0.072px] border border-evergreen-dark rounded-[10px] py-4 px-6"
+							>Contact us <img src="/images/arrow-right.svg" alt="" role="presentation" /></a
+						>
+					</div>
+				</div>
+				<div class="flex flex-col gap-y-14">
+					<FaqItem
+						question="How do I place an order for gas?"
+						answer="You can easily place an order for gas through our app. Simply log in to  your account, select your preferred gas cylinder size and quantity,  choose a delivery time slot, and proceed to checkout."
+					/>
+					<FaqItem
+						question="Can I schedule recurring gas deliveries?"
+						answer="Yes, you can schedule recurring gas deliveries based on your preferred  frequency, such as weekly, bi-weekly, or monthly. Our app allows you to  set up refill reminders and automate your gas orders."
+					/>
+					<FaqItem
+						question="How soon can I expect my gas delivery?"
+						answer="Delivery times may vary depending on your location and delivery  schedule. Typically, you can expect your gas delivery within a specified  time window chosen during checkout."
+					/>
+					<FaqItem
+						question="Can I track my gas delivery in real time?"
+						answer="Yes, you can track your gas delivery in real time through our app. We  provide updates on the status of your order, including when it's out for  delivery and when it's been successfully delivered."
+					/>
+					<FaqItem
+						question="Are there any additional charges or fees for gas delivery?"
+						answer="Our gas delivery services may include a nominal delivery fee based on  your location and the size of your gas order. Any additional charges or  fees will be clearly displayed before you confirm your order."
+					/>
+					<FaqItem
+						question="How do you ensure the safety of gas delivery?"
+						answer="We partner with certified gas suppliers and adhere to strict safety  protocols during delivery. Our delivery personnel are trained to handle  gas cylinders safely and securely."
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
 </main>
