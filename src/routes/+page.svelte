@@ -186,7 +186,7 @@
 		<Carousel />
 	</section>
 
-	<section class="px-5 md:px-16">
+	<section class="px-5 md:px-16 mb-[78px]">
 		<div class="py-[64px] px-[30px] md:px-[60px] bg-evergrey rounded-3xl">
 			<div class="flex items-center gap-x-[10px] mb-[56px] pb-5 border-b border-evergreen-soft justify-center md:justify-start">
 				<img src="/images/dot.svg" alt="" role="presentation" />
