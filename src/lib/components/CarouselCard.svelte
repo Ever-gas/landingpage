@@ -6,7 +6,7 @@
     export let img;
 </script>
 
-<div class="rounded-2xl group relative cursor-pointer">
+<div class="rounded-2xl group relative cursor-pointer w-[85%] md:w-full">
     <img class="object-cover h-full w-full rounded-2xl group-hover:opacity-0 opacity-100 group-hover:z-0 z-50 transition-all duration-700 absolute top-0 left-0" src="{img}" alt="" role="presentation" />
     <div class={`${color} px-[22px] lg:px-[26px] py-[32px] rounded-2xl flex flex-col justify-between h-full w-full z-0 group-hover:z-50 absolute`}>
         <div class="mb-[60px]">
@@ -16,7 +16,7 @@
             </p>
         </div>
         <div class="mb-[40px]">
-            <p class="font-satoshi font-medium text-lg tracking-[0.1px] text-[#373943] leading-[24.3px] w-[24ch] md:w-[40ch] lg:w-[28ch]">
+            <p class="font-satoshi font-medium text-lg tracking-[0.1px] text-[#373943] leading-[24.3px] w-[25ch] md:w-[30ch] lg:w-[28ch]">
                {content}
             </p>
         </div>

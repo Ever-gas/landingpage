@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="grid grid-cols-[394px_394px_394px_394px] ps-16 h-[420px] gap-x-[18px] overflow-x-scroll grid-rows-1"
+	class="grid grid-cols-[394px_394px_394px_394px] ps-5 md:ps-16 h-[420px] md:gap-x-[18px] overflow-x-scroll grid-rows-1"
 	role="presentation"
 >
 	<CarouselCard
