@@ -185,4 +185,8 @@
 		<Carousel />
 	</section>
 
+	<section class="px-5 md:px-16 pt-[141px]">
+		
+	</section>
+
 </main>

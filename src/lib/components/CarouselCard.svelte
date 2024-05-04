@@ -1,5 +1,6 @@
 <script>
     export let title;
+    export let subtitle;
     export let content;
     export let color;
     export let button;
@@ -7,8 +8,8 @@
 </script>
 
 <div class="rounded-2xl group relative h-full cursor-pointer w-[85%] md:w-full">
-    <div class="h-full w-full rounded-2xl group-hover:opacity-0 opacity-100 group-hover:z-0 z-50 transition-all duration-700 absolute top-0 left-0 {img} bg-cover bg-no-repeat bg-center">
-        <!-- <img class="object-cover h-full w-full" src="{img}" alt="" role="presentation" /> -->
+    <div class="px-[23px] py-[35px] flex flex-col justify-end h-full w-full rounded-2xl group-hover:opacity-0 opacity-100 group-hover:z-0 z-50 transition-all duration-700 absolute top-0 left-0 {img} bg-[#00000052] bg-blend-overlay bg-cover bg-no-repeat bg-center">
+        <p class="font-satoshi font-medium text-[32px] -tracking-[1.2px] text-white">{subtitle}</p>
     </div>
     <div class={`${color} px-[22px] lg:px-[26px] py-[32px] rounded-2xl flex flex-col justify-between h-full w-full z-0 group-hover:z-50 absolute`}>
         <div class="mb-[60px]">
