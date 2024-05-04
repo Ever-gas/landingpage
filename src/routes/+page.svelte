@@ -15,12 +15,12 @@
 
 		<section class="relative px-5 md:px-16 py-32">
 			<h2
-				class="font-satoshi font-bold text-white leading-10 lg:leading-[80px] text-[42px] lg:text-[84px] -tracking-[2.52px] w-full text-center lg:text-start lg:w-[15ch] mb-4"
+				class="font-satoshi font-bold text-white leading-10 lg:leading-[80px] text-[42px] lg:text-[84px] -tracking-[2.52px] w-full text-center lg:text-start lg:w-[15ch] mt-10 lg:mt-0 mb-4"
 			>
 				A better way to buy cooking gas
 			</h2>
 			<p
-				class="font-satoshi text-xs lg:text-xl text-center lg:text-start w-full leading-4 lg:leading-8 font-medium text-white lg:w-[55ch] mb-12"
+				class="font-satoshi text-xs lg:text-xl text-center lg:text-start w-full leading-4 lg:leading-8 font-medium text-white lg:w-[55ch] mb-28 lg:mb-12"
 			>
 				Say goodbye to long waits and tedious processes. With our streamlined online ordering
 				system, getting your cooking gas has never been easier.
