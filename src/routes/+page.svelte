@@ -1,8 +1,9 @@
 <script>
 	import Nav from '$lib/components/Nav.svelte';
 	import Accordion from '$lib/components/Accordion.svelte';
-    import Card from '$lib/components/Card.svelte';
+	import Card from '$lib/components/Card.svelte';
 	import Step from '$lib/components/Steps.svelte';
+	import Carousels from '$lib/components/Carousels.svelte';
 </script>
 
 <main>
@@ -90,7 +91,9 @@
 					/>
 				</div>
 			</div>
-			<div class="lg:w-1/3 bg-evergreen-dark ps-[22px] lg:ps-[44px] py-[33px] rounded-2xl flex flex-col justify-between">
+			<div
+				class="lg:w-1/3 bg-evergreen-dark ps-[22px] lg:ps-[44px] py-[33px] rounded-2xl flex flex-col justify-between"
+			>
 				<div class="mb-5 lg:mb-0">
 					<img src="/images/arrow-diagonal.svg" alt="" role="presentation" class="mb-[40px]" />
 					<p class="font-satoshi font-medium text-[40px] -tracking-[1.2px] text-white">
@@ -98,7 +101,9 @@
 					</p>
 				</div>
 				<div>
-					<p class="font-satoshi font-medium text-lg tracking-[0.1px] text-white leading-[24.3px] w-[22ch] md:w-[40ch] lg:w-[28ch]">
+					<p
+						class="font-satoshi font-medium text-lg tracking-[0.1px] text-white leading-[24.3px] w-[22ch] md:w-[40ch] lg:w-[28ch]"
+					>
 						We prioritize timely delivery to ensure you never run out of cooking gas when you need
 						it the most. Say goodbye to last-minute emergencies.
 					</p>
@@ -106,33 +111,78 @@
 			</div>
 		</div>
 
-        <div class="flex flex-col lg:flex-row gap-x-[18px] gap-y-[18px]">
-            <Card title="Easy Online Payments" color="bg-everblue" content="Secure online payment options make transactions smooth and worry-free.  You can choose your preferred payment method for added convenience." />
-            <Card title="Gas Refill Reminders" color="bg-[#DFE8E5]" content="Keeping track of your cooking gas usage can be a hassle. That's why  we've introduced refill reminders to ensure you always have a steady  supply of gas when you need it most." />
-            <div class="flex-1">
-                <img src="/images/man-truck.jpg" alt="" role="presentation" class="rounded-2xl h-full object-cover">
-            </div>
-        </div>
+		<div class="flex flex-col lg:flex-row gap-x-[18px] gap-y-[18px]">
+			<Card
+				title="Easy Online Payments"
+				color="bg-everblue"
+				content="Secure online payment options make transactions smooth and worry-free.  You can choose your preferred payment method for added convenience."
+			/>
+			<Card
+				title="Gas Refill Reminders"
+				color="bg-[#DFE8E5]"
+				content="Keeping track of your cooking gas usage can be a hassle. That's why  we've introduced refill reminders to ensure you always have a steady  supply of gas when you need it most."
+			/>
+			<div class="flex-1">
+				<img
+					src="/images/man-truck.jpg"
+					alt=""
+					role="presentation"
+					class="rounded-2xl h-full object-cover"
+				/>
+			</div>
+		</div>
 	</section>
 
-    <section class="px-5 md:px-16 pt-[141px]">
-        <p class="font-satoshi text-hint text-center font-medium lg-[6px] lg:mb-[10px] uppercase">
+	<section class="px-5 md:px-16 pt-[141px]">
+		<p class="font-satoshi text-hint text-center font-medium lg-[6px] lg:mb-[10px] uppercase">
 			let's go
 		</p>
 		<h3
 			class="font-satoshi font-bold text-heading leading-[30px] lg:leading-[44px] -tracking-[0.6px] text-[20px] lg:text-[54px] text-center mb-[55px] lg:mb-[110px]"
 		>
-            Get started in 3 simple steps
+			Get started in 3 simple steps
 		</h3>
-		<div class="flex flex-col lg:flex-row gap-x-[54px] bg-[#F5F5F5] p-6 rounded-2xl gap-y-[54px] lg:gap-y-0">
+		<div
+			class="flex flex-col lg:flex-row gap-x-[54px] bg-[#F5F5F5] p-6 rounded-2xl gap-y-[54px] lg:gap-y-0"
+		>
 			<div class="flex flex-col gap-y-[26px] w-auto order-2 lg:order-1">
-				<Step step="1" title="Create Account" content="Get started by creating an account. It takes less than a minute - seriously" />
-				<Step step="2" title="Find Gas Stations" content="Select a gas station, Simply select your preferred gas cylinder size, quantity and delivery method." />
-				<Step step="3" title="Get it Delivered" content="Sit back and relax. Our delivery team will ensure your cooking gas is delivered to you on time." />
+				<Step
+					step="1"
+					title="Create Account"
+					content="Get started by creating an account. It takes less than a minute - seriously"
+				/>
+				<Step
+					step="2"
+					title="Find Gas Stations"
+					content="Select a gas station, Simply select your preferred gas cylinder size, quantity and delivery method."
+				/>
+				<Step
+					step="3"
+					title="Get it Delivered"
+					content="Sit back and relax. Our delivery team will ensure your cooking gas is delivered to you on time."
+				/>
 			</div>
 			<div class="lg:w-[48.125rem] order-1 lg:order-2 rounded-xl">
-				<img class="object-cover h-full rounded-xl" src="/images/lady-laptop.jpg" alt="" role="presentation">
+				<img
+					class="object-cover h-full rounded-xl"
+					src="/images/lady-laptop.jpg"
+					alt=""
+					role="presentation"
+				/>
 			</div>
 		</div>
-    </section>
+	</section>
+
+	<section class="pt-[141px]">
+		<p class="font-satoshi text-hint text-center font-medium lg-[6px] lg:mb-[10px] uppercase">
+			The gas universe
+		</p>
+		<h3
+			class="font-satoshi font-bold text-heading leading-[30px] lg:leading-[44px] -tracking-[0.6px] text-[20px] lg:text-[54px] text-center mb-[83px] lg:mb-[110px]"
+		>
+			Connecting the entire value chain
+		</h3>
+		<Carousels />
+	</section>
+	
 </main>

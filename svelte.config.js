@@ -10,7 +10,7 @@ const config = {
 		adapter: adapter({
 			edge: false,
 			split: false
-		})
+		}),
 	},
 	preprocess: vitePreprocess()
 };
