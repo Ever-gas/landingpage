@@ -3,7 +3,7 @@
 	import Accordion from '$lib/components/Accordion.svelte';
 	import Card from '$lib/components/Card.svelte';
 	import Step from '$lib/components/Steps.svelte';
-	import Carousels from '$lib/components/Carousels.svelte';
+	import Carousel from '$lib/components/Carousel.svelte';
 </script>
 
 <main>
@@ -182,7 +182,7 @@
 		>
 			Connecting the entire value chain
 		</h3>
-		<Carousels />
+		<Carousel />
 	</section>
-	
+
 </main>
